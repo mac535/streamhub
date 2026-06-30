@@ -1,0 +1,149 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  EXPERT
+  STREAM_LAB
+  ILAB_SCHOOL
+  CREATIVE_CORNER
+}
+
+model User {
+  id          String    @id @default(uuid())
+  email       String    @unique
+  username    String    @unique
+  password    String
+  name        String
+  role        Role      @default(EXPERT)
+  avatar      String?
+  isActive    Boolean   @default(true) @map("is_active")
+  lastLoginAt DateTime? @map("last_login_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Stock {
+  id           String   @id @default(uuid())
+  itemCode     String?  @map("item_code")
+  itemName     String   @map("item_name")
+  quantity     Int      @default(0)
+  category     String?
+  newQty       Int?     @map("new_qty")
+  section      String?
+  label        String?
+  img          String?
+  spaceCode    String?  @map("space_code")
+  status       String?
+  availableQty Int?     @map("available_qty")
+  baseline     Int?
+  district     String?
+  brc          String?
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("stocks")
+}
+
+model StockHistory {
+  id               String   @id @default(uuid())
+  stockId          String   @map("stock_id")
+  itemCode         String?  @map("item_code")
+  itemName         String?  @map("item_name")
+  quantity         Int?
+  action           String?
+  reason           String?
+  district         String?
+  brc              String?
+  previousQuantity Int?     @map("previous_quantity")
+  newQuantity      Int?     @map("new_quantity")
+  availableQty     Int?     @map("available_qty")
+  userId           String?  @map("user_id")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  @@map("stock_history")
+}
+
+model Event {
+  id                String   @id @default(uuid())
+  brcCode           String   @map("brc_code")
+  venueType         String   @map("venue_type")
+  venueValue        String   @map("venue_value")
+  name              String
+  date              String
+  description       String?
+  teachersCount     Int      @default(0) @map("teachers_count")
+  studentsCount     Int      @default(0) @map("students_count")
+  latitude          Float?
+  longitude         Float?
+  locationTimestamp String?  @map("location_timestamp")
+  tag               String?
+  customTag         String?  @map("custom_tag")
+  photos            Json?
+  status            String   @default("DRAFT")
+  reportPdf         String?  @map("report_pdf")
+  createdBy         String   @map("created_by")
+  creatorRole       String?  @map("creator_role")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  @@map("events")
+}
+
+model Message {
+  id           String   @id @default(uuid())
+  to           Json
+  from         String?
+  content      String
+  scheduledFor String?  @map("scheduled_for")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@map("messages")
+}
+
+model Form {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  fields      Json
+  assignedTo  Json?    @map("assigned_to")
+  published   Boolean  @default(false)
+  createdBy   String   @map("created_by")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("forms")
+}
+
+model FormResponse {
+  id          String   @id @default(uuid())
+  formId      String   @map("form_id")
+  submittedBy String   @map("submitted_by")
+  data        Json
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("form_responses")
+}
+
+model FormTemplate {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  fields      Json
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("form_templates")
+}

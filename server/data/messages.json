@@ -1,0 +1,871 @@
+[
+  {
+    "id": "b2f2f2a6-21eb-41b6-b2fa-d02b71e43c31",
+    "to": [
+      "BRC:32110100105SH"
+    ],
+    "content": "hello",
+    "scheduledFor": null,
+    "createdAt": "2026-06-16T05:19:35.852Z"
+  },
+  {
+    "id": "e4609e37-f919-4bd1-9c7d-2976e4419251",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 0 created, 406 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-17T10:32:42.649Z"
+  },
+  {
+    "id": "4f0b7b08-3c75-4e97-9e53-4132d4039882",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:04:00.332Z"
+  },
+  {
+    "id": "4f3e9dfa-7709-43a7-b647-e9e70e2d6884",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:04:00.334Z"
+  },
+  {
+    "id": "b83a8c9b-29dd-41ac-8140-069dc07b5e70",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: b (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:04:50.353Z"
+  },
+  {
+    "id": "def29949-80f0-49b5-bfd6-81a23f68b313",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: b (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:04:50.355Z"
+  },
+  {
+    "id": "3cc2d322-c24d-4afd-837f-2e6ef18fa5cd",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Digital fabrication) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:06:14.776Z"
+  },
+  {
+    "id": "22c84353-7061-45b0-9638-d6d123777c80",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:06:14.777Z"
+  },
+  {
+    "id": "7baf0703-33b5-41c1-bcf9-4c5530defffc",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: mac (Adhesive and tapes) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:14:43.887Z"
+  },
+  {
+    "id": "d5a73209-32e5-4079-b944-3aa284c5e7fb",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: mac (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:14:43.888Z"
+  },
+  {
+    "id": "5fd69b06-a74c-4cd1-839c-4027bb7464c5",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: mac (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:14:43.893Z"
+  },
+  {
+    "id": "c6f1fa87-22b9-46d1-a393-5d329aa94891",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: mac (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:14:43.894Z"
+  },
+  {
+    "id": "e4204819-4f0d-40dc-953f-c61cb7cef855",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: mac (Cutting and shaping tools) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:18:36.055Z"
+  },
+  {
+    "id": "b36f5cd5-b922-454b-a00a-06c8a37bdada",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: mac (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:18:36.056Z"
+  },
+  {
+    "id": "38a5087d-2299-4781-b9da-a6e453473e68",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: mac (Cutting and shaping tools) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:18:36.059Z"
+  },
+  {
+    "id": "5659f9a4-c042-4949-aeea-264d229f8810",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: mac (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:18:36.059Z"
+  },
+  {
+    "id": "f5e7b4e4-0886-4d6f-94e8-5ba177afab76",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Cutting and shaping tools) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:19:12.464Z"
+  },
+  {
+    "id": "72e8a9fa-ee92-4900-9378-4981b4a6a08e",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:19:12.465Z"
+  },
+  {
+    "id": "c964b350-f170-4cb9-827d-407a11fe21e2",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Cutting and shaping tools) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:19:12.489Z"
+  },
+  {
+    "id": "8a7968e7-c67e-48cf-b48d-8bb9677080ac",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:19:12.491Z"
+  },
+  {
+    "id": "b2475300-1b08-4ac7-a5b4-f59287232f79",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:26:00.198Z"
+  },
+  {
+    "id": "ef622993-bc29-4772-82cb-fbda92849d09",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:26:00.198Z"
+  },
+  {
+    "id": "b680a54c-bbfb-47bc-a70d-351527e10caf",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:26:00.201Z"
+  },
+  {
+    "id": "4244a504-dda6-4b02-8ddc-a0f05c75b51d",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:26:00.203Z"
+  },
+  {
+    "id": "7d3cac71-4157-45e1-8ff1-a3e167fbbee4",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: l (Art and craft supplies) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:38:02.031Z"
+  },
+  {
+    "id": "d188969f-8273-4ad5-91e8-4e41fc6381e6",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: l (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:38:02.032Z"
+  },
+  {
+    "id": "7624c960-f837-40d1-89b7-e627bb231a63",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: l (Art and craft supplies) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:38:02.036Z"
+  },
+  {
+    "id": "52da6637-7ccc-4ad3-99fd-f3fc9693879c",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: l (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:38:02.037Z"
+  },
+  {
+    "id": "36b702e7-81da-4213-975a-aa3b0377c2e8",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:49:35.452Z"
+  },
+  {
+    "id": "ed36413f-395b-4f91-93f5-6c0882c1df47",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:49:35.453Z"
+  },
+  {
+    "id": "a7fe6cf9-c10b-414f-a2c3-6468bdb07008",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:49:35.457Z"
+  },
+  {
+    "id": "5e793899-e3fd-4ca8-8c9b-af618a0d263e",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:49:35.458Z"
+  },
+  {
+    "id": "b4b0a46c-1e8c-4928-ad43-abe08174a196",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: l (Audio and Visual equipment) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:17.700Z"
+  },
+  {
+    "id": "3b0bf33e-138d-4ed7-bc4a-d3c685db71e0",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: l (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:17.701Z"
+  },
+  {
+    "id": "304a94a4-3bfa-480e-8d38-1fc4cfe9e867",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: l (Audio and Visual equipment) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:17.704Z"
+  },
+  {
+    "id": "dc4c6fe8-facd-47ac-93eb-aa13ec608c54",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: l (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:17.705Z"
+  },
+  {
+    "id": "e3d5986b-c20a-47be-a653-f0f3940f918a",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Audio and Visual equipment) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:35.569Z"
+  },
+  {
+    "id": "73da48cd-7427-4c5b-8360-2d9f6d7a405a",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:35.569Z"
+  },
+  {
+    "id": "954cf543-0ba9-4963-a883-dcc4d4569079",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Audio and Visual equipment) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:35.572Z"
+  },
+  {
+    "id": "987723c3-f96c-4b9f-bed2-2244979b73f8",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T05:53:35.573Z"
+  },
+  {
+    "id": "f1d70a6d-831b-4e0a-904d-6c2cafb1ec0d",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:40.888Z"
+  },
+  {
+    "id": "19ba0cf2-cd09-4f2a-a58d-acb3d925487b",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:40.889Z"
+  },
+  {
+    "id": "1a8f4b8b-2f16-4ebf-acb0-53d4a5220297",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:40.892Z"
+  },
+  {
+    "id": "cb0d3b97-5c24-4483-a3ee-deef94a6a7cd",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:40.893Z"
+  },
+  {
+    "id": "518a7b3d-5c51-433b-82c8-b18d239ed832",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:57.331Z"
+  },
+  {
+    "id": "d73a4e92-d917-4f84-8474-f15e5d6d2966",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:57.332Z"
+  },
+  {
+    "id": "d6805947-5aff-451d-9148-7c541ac18386",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:57.335Z"
+  },
+  {
+    "id": "90f2bb3e-6458-46f3-800e-3c4454c9ec8f",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:06:57.336Z"
+  },
+  {
+    "id": "af7df25a-e52f-47ea-944a-b9ef7b0745c3",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:09:54.153Z"
+  },
+  {
+    "id": "a76716e5-1453-40a7-9502-81d1f8320bfd",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:09:54.154Z"
+  },
+  {
+    "id": "838daa1b-eb84-4d45-8a4c-712e752b0173",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:09:54.157Z"
+  },
+  {
+    "id": "7737d054-0382-4b0a-8651-0cb2c870254f",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:09:54.158Z"
+  },
+  {
+    "id": "5b2b65d8-b38c-4c59-b680-5c877ae64d20",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: l (Adhesive and tapes) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:40:44.362Z"
+  },
+  {
+    "id": "1b9a5a2b-5178-47d7-a6dc-c7a9b8fdc6f9",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: l (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:40:44.363Z"
+  },
+  {
+    "id": "cd9f70c9-156f-45d9-bab6-04ae0decffdd",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: l (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:40:44.366Z"
+  },
+  {
+    "id": "90a19473-d161-497c-a1d8-5b2533efb205",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: l (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-18T06:40:44.368Z"
+  },
+  {
+    "id": "b42b7501-412d-4b39-ad52-7a1fd84bffbd",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 4 created, 0 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-20T07:20:00.725Z"
+  },
+  {
+    "id": "0ade0c5d-c364-44f0-9b14-a953da475942",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 4 created, 0 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-20T07:25:05.357Z"
+  },
+  {
+    "id": "aa62eac3-941c-475c-bcf5-faba6181c3c3",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Electronic modules) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:37:40.107Z"
+  },
+  {
+    "id": "e00223e1-de7d-4bab-8ed9-f2a828714c04",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:37:40.113Z"
+  },
+  {
+    "id": "19b586a2-eced-4d92-9b71-0a83747dc662",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Electronic modules) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:37:40.122Z"
+  },
+  {
+    "id": "f71ddf04-55af-4195-9c03-8485e88ebc4c",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:37:40.124Z"
+  },
+  {
+    "id": "a0d822fa-ee9b-46d3-9402-d7ef1b40980b",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at ALAPPUZHA is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:42:12.651Z"
+  },
+  {
+    "id": "c49b6d67-47ed-4740-af98-4810090279b9",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:42:12.654Z"
+  },
+  {
+    "id": "06b24c2b-c157-42d6-b241-08b07e88a6de",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:42:12.661Z"
+  },
+  {
+    "id": "9d3067c2-c17b-4a0a-81a5-59cba0f6bb60",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T05:42:12.665Z"
+  },
+  {
+    "id": "a960ebd6-3328-4251-bbd9-404f3ebf8ebd",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:16:57.725Z"
+  },
+  {
+    "id": "95177a0c-7163-48a5-be1d-6df50ab78280",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:16:57.728Z"
+  },
+  {
+    "id": "e707ff3b-e8ae-4a49-8262-9963560ed416",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 2 created, 0 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:30:48.843Z"
+  },
+  {
+    "id": "38c56e18-e076-4cbd-8b38-df55d12c511a",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Adhesive and tapes) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:33:44.222Z"
+  },
+  {
+    "id": "c75e0d75-61ff-4d88-b290-3cf3aadfb17f",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:33:44.223Z"
+  },
+  {
+    "id": "b843e3e3-a684-4574-952e-fcf127060b05",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 0 created, 2 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:34:22.771Z"
+  },
+  {
+    "id": "e9eb78cd-fae0-4d2f-b10c-81ca4537b328",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 2 created, 0 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:36:10.060Z"
+  },
+  {
+    "id": "e83cf28c-c47a-4ab4-b3f4-11ea895b2ccb",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at Hub is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:51:34.578Z"
+  },
+  {
+    "id": "cf59f2a1-d8e5-4f42-a1f0-4b1fa5539600",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:51:34.582Z"
+  },
+  {
+    "id": "19934827-afe8-4ba5-8f06-bde7e3892636",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Art and craft supplies) at Hub is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:51:47.098Z"
+  },
+  {
+    "id": "8cd56ad6-eba9-41c7-8245-ed0b5017de8f",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: Test Item (undefined units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:56:06.571Z"
+  },
+  {
+    "id": "622a44f3-b286-4632-85e7-fc978fa5fbd2",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: Test Item (Other) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:57:17.414Z"
+  },
+  {
+    "id": "5d4574c6-f1f4-42a3-aadc-939032361045",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: Test Item (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:57:17.416Z"
+  },
+  {
+    "id": "3976c4d3-5d1a-4c14-b68a-9fdd4944631a",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: Test Item (Other) at 32110100105SH is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T06:57:17.431Z"
+  },
+  {
+    "id": "ccc9b0f7-d371-4da2-b089-4ac6c0c31371",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Electronic components) at Hub is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T07:04:47.299Z"
+  },
+  {
+    "id": "ae2a581a-c2b2-43f7-820d-8d008a24e82a",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "New stock item created: m (1 units)",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T07:04:47.304Z"
+  },
+  {
+    "id": "a70ab997-3d0c-4d4e-9318-46f9da256c80",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "LOW STOCK ALERT: m (Electronic components) at Hub is at 1 quantity.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T07:05:02.344Z"
+  },
+  {
+    "id": "d693e1c6-82d5-4248-82eb-3356760788bb",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 0 created, 105 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T07:15:54.877Z"
+  },
+  {
+    "id": "525832a3-0a2b-4de7-bf2c-00905c144d51",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 0 created, 105 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T07:32:29.434Z"
+  },
+  {
+    "id": "f05de5e5-040b-4213-8436-64967655a708",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 0 created, 105 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T08:21:02.924Z"
+  },
+  {
+    "id": "4776e515-14d8-4347-8fc0-293c62d171de",
+    "to": [
+      "ADMIN"
+    ],
+    "from": "System Alerts",
+    "content": "Bulk Upload Completed: 0 created, 105 updated.",
+    "scheduledFor": null,
+    "createdAt": "2026-06-22T08:22:11.811Z"
+  }
+]

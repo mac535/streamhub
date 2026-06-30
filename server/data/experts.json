@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fb9fc04a-8328-40ab-beaa-a5c912a439ed",
+    "name": "Rio Roy",
+    "email": "rio7roy@gmail.com",
+    "createdAt": "2026-06-08T05:15:47.831Z",
+    "phone": "1234567",
+    "address": "sdfghj",
+    "username": "123rio",
+    "confirmPassword": "123rio",
+    "whatsappJoined": true,
+    "password": "$2b$12$GHHr2EPt903hSYzPz5y8E.74n.z6qbLmdwOX3UGhksLRHL6hNpMPq",
+    "role": "EXPERT",
+    "isActive": true,
+    "activatedAt": "2026-06-08T05:16:31.660Z",
+    "avatar": "opt-1780900810944-075f89e5ad1a8ab2.webp",
+    "assignedBrcs": [
+      "32110100105SH",
+      "32110400102SH"
+    ]
+  }
+]

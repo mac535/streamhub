@@ -1,0 +1,36 @@
+{
+  "name": "@stream/server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "@stream/shared": "*",
+    "axios": "^1.17.0",
+    "bcrypt": "^5.1.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "googlethis": "^1.8.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^8.0.11",
+    "pdf-export-images": "^1.2.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.16.0",
+    "puppeteer": "^25.1.0",
+    "sharp": "^0.33.5",
+    "socket.io": "^4.8.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  }
+}
