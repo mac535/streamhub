@@ -91,7 +91,7 @@ You can log in using the following credentials:
 | **Admin** | admin@stream.edu | Admin@123 |
 | **STREAM Expert** | expert@stream.edu | Demo@123 |
 | **STREAM Hub** | lab@stream.edu | Demo@123 |
-| **iLab Corner** | ilab@stream.edu | Demo@123 |
+| **iLab**        | ilab@stream.edu | Demo@123 |
 | **Creative Corner** | creative@stream.edu | Demo@123 |
 
 *(Additionally, 87 unique Hub credentials have been pre-seeded for individual BRCs. Refer to `server/data/hub_credentials.csv` for the full list).*

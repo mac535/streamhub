@@ -7,7 +7,7 @@ const ENTITY_TYPES = [
   { id: 'admins', label: 'System Admin', icon: 'admin_panel_settings' },
   { id: 'experts', label: 'STREAM Expert', icon: 'school' },
   { id: 'labs', label: 'STREAM Hub', icon: 'science' },
-  { id: 'ilabs', label: 'iLab Corner', icon: 'computer' },
+  { id: 'ilabs', label: 'iLab', icon: 'computer' },
   { id: 'creative_corners', label: 'Creative Corner', icon: 'palette' }
 ];
 

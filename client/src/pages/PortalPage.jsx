@@ -12,7 +12,7 @@ const PORTALS = [
   { role: 'ADMIN', label: 'Admin', icon: 'admin_panel_settings', defaultEmail: 'admin@stream.edu', defaultPassword: 'Admin@123' },
   { role: 'EXPERT', label: 'STREAM Expert', icon: 'school', defaultEmail: 'rio7roy@gmail.com', defaultPassword: '123rio' },
   { role: 'STREAM_LAB', label: 'STREAM Hub', icon: 'biotech', defaultEmail: '', defaultPassword: '', isHub: true },
-  { role: 'ILAB', label: 'iLab Corner', icon: 'computer', defaultEmail: 'ilab@stream.edu', defaultPassword: 'Demo@123' },
+  { role: 'ILAB', label: 'iLab', icon: 'computer', defaultEmail: 'ilab@stream.edu', defaultPassword: 'Demo@123' },
   { role: 'CREATIVE_CORNER', label: 'Creative Corner', icon: 'auto_awesome', defaultEmail: 'creative_corners@stream.edu', defaultPassword: 'Demo@123' },
 ];
 
