@@ -10,7 +10,7 @@ const { generateToken } = require('../../utils/token');
  */
 async function login(identifier, password) {
   // Find user by email or username
-  const user = db.users.findFirst({
+  const user = db.user.findFirst({
     where: {
       OR: [
         { email: identifier },
