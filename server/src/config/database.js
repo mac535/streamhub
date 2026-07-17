@@ -30,7 +30,7 @@ async function seedDatabase() {
 
       const mockUsers = [
         {
-          id: 'mock-admin',
+          id: '11111111-1111-1111-1111-111111111111',
           email: 'admin@stream.edu',
           username: 'admin',
           password: adminPassword,
@@ -39,7 +39,7 @@ async function seedDatabase() {
           isActive: true
         },
         {
-          id: 'mock-expert',
+          id: '22222222-2222-2222-2222-222222222222',
           email: 'expert@stream.edu',
           username: 'expert',
           password: demoPassword,
@@ -48,7 +48,7 @@ async function seedDatabase() {
           isActive: true
         },
         {
-          id: 'rio',
+          id: '33333333-3333-3333-3333-333333333333',
           email: 'rio@stream.edu',
           username: 'rio',
           password: rioPassword,
@@ -61,7 +61,15 @@ async function seedDatabase() {
       const activeExperts = loadJSON('experts.json');
       const activeAdmins = loadJSON('admins.json');
       const hubUsers = loadJSON('hub_users.json');
-      const allBrcs = loadJSON('brcs.json');
+      const allBrcs = loadJSON('brcs.json').map(b => ({
+        id: b.id || require('crypto').randomUUID(),
+        email: `${b.code.toLowerCase()}@stream.edu`,
+        username: b.code.toLowerCase(),
+        password: adminPassword,
+        name: b.name,
+        role: 'ILAB_SCHOOL',
+        isActive: true
+      }));
 
       const allUsers = [...mockUsers, ...activeExperts, ...activeAdmins, ...hubUsers, ...allBrcs].map(u => ({
         id: u.id,
@@ -176,9 +184,9 @@ async function seedDatabase() {
                 tag: e.tag,
                 customTag: e.customTag,
                 photos: e.photos || [],
-                status: e.status || 'DRAFT',
+                status: e.status || 'PUBLISHED',
                 reportPdf: e.reportPdf,
-                createdBy: e.createdBy || 'mock-expert',
+                createdBy: e.createdBy === 'mock-expert' ? '22222222-2222-2222-2222-222222222222' : e.createdBy === 'mock-admin' ? '11111111-1111-1111-1111-111111111111' : e.createdBy || '22222222-2222-2222-2222-222222222222',
                 creatorRole: e.creatorRole
              })),
              skipDuplicates: true
