@@ -10,7 +10,7 @@ const { generateToken } = require('../../utils/token');
  */
 async function login(identifier, password) {
   // Find user by email or username
-  const user = db.user.findFirst({
+  const user = await db.user.findFirst({
     where: {
       OR: [
         { email: identifier },
@@ -33,7 +33,7 @@ async function login(identifier, password) {
   }
 
   // Update last login timestamp
-  db.users.update({
+  await db.user.update({
     where: { id: user.id },
     data: { lastLoginAt: new Date() },
   });
@@ -53,7 +53,7 @@ async function login(identifier, password) {
 async function register(data) {
   const hashedPassword = await hashPassword(data.password);
 
-  const user = db.users.create({
+  const user = await db.user.create({
     data: {
       name: data.name,
       email: data.email,
@@ -75,7 +75,7 @@ async function register(data) {
  * @returns {object} User data without password
  */
 async function getProfile(userId) {
-  const user = db.users.findUnique({
+  const user = await db.user.findUnique({
     where: { id: userId },
     select: {
       id: true,
@@ -110,7 +110,7 @@ async function updateProfile(userId, data) {
     }
   }
 
-  const updatedUser = db.users.update({
+  const updatedUser = await db.user.update({
     where: { id: userId },
     data: updateData,
     select: {
@@ -137,7 +137,7 @@ async function forgotPassword(email, origin) {
   const crypto = require('crypto');
   const mailer = require('../../utils/mailer');
   
-  const user = db.users.findFirst({ where: { email } });
+  const user = await db.user.findFirst({ where: { email } });
   if (!user) {
     throw Object.assign(new Error('This email address is not registered in our system.'), { statusCode: 404 });
   }
@@ -145,7 +145,7 @@ async function forgotPassword(email, origin) {
   const resetToken = crypto.randomBytes(32).toString('hex');
   const resetTokenExpires = new Date(Date.now() + 3600000); // 1 hour
 
-  db.users.update({
+  await db.user.update({
     where: { id: user.id },
     data: { resetToken, resetTokenExpires }
   });
@@ -171,7 +171,7 @@ async function resetPassword(token, newPassword) {
   const fs = require('fs');
   const path = require('path');
   
-  const user = db.users.findFirst({
+  const user = await db.user.findFirst({
     where: { resetToken: token }
   });
 
@@ -181,7 +181,7 @@ async function resetPassword(token, newPassword) {
 
   const hashedPassword = await hashPassword(newPassword);
 
-  db.users.update({
+  await db.user.update({
     where: { id: user.id },
     data: { 
       password: hashedPassword,
