@@ -78,6 +78,9 @@ async function seedDatabase() {
         password: u.password || adminPassword,
         name: u.name || u.brcName || u.hubName || 'Unknown User',
         role: u.role || 'EXPERT',
+        phone: u.phone || null,
+        address: u.address || null,
+        assignedBrcs: u.assignedBrcs || [],
         isActive: u.isActive !== undefined ? u.isActive : true
       }));
 
