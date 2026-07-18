@@ -274,8 +274,8 @@ export default function AdminDashboardPage() {
                 </div>
               </div>
               
-              <div className="flex flex-wrap items-center gap-3 mt-auto">
-                <div className="relative flex-1 min-w-[200px]">
+              <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                <div className="relative flex-1">
                   <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary pointer-events-none text-sm">
                     search
                   </span>
