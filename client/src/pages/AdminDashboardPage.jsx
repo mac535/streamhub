@@ -318,8 +318,8 @@ export default function AdminDashboardPage() {
                 </div>
               </div>
               
-              <div className="flex flex-wrap items-center gap-3 mt-auto">
-                <div className="relative flex-1 min-w-[200px]">
+              <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                <div className="relative flex-1 min-w-0">
                   <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-amber-600 pointer-events-none text-sm">
                     person
                   </span>
@@ -331,20 +331,20 @@ export default function AdminDashboardPage() {
                     <option value="">Select Expert...</option>
                     <option value="all">All Experts</option>
                     {experts.map(exp => (
-                      <option key={exp.id} value={exp.id}>
-                        {exp.name}
-                      </option>
+                       <option key={exp.id} value={exp.id}>
+                         {exp.name}
+                       </option>
                     ))}
                   </select>
                   <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-sm">
                     arrow_drop_down
                   </span>
                 </div>
-                <div className="flex flex-wrap shrink-0 gap-2">
+                <div className="flex shrink-0 gap-2">
                   <button
                     onClick={() => setShowExpertManageModal(true)}
                     disabled={!selectedExpertId || selectedExpertId === 'all'}
-                    className="px-6 py-3 bg-amber-500 text-white font-bold rounded-xl shadow hover:opacity-90 transition-all disabled:opacity-50 disabled:shadow-none flex items-center gap-2"
+                    className="px-4 py-3 bg-amber-500 text-white font-bold rounded-xl shadow hover:opacity-90 transition-all disabled:opacity-50 disabled:shadow-none flex items-center gap-2"
                   >
                     <span className="material-symbols-outlined text-sm">edit</span>
                     Manage
@@ -352,7 +352,7 @@ export default function AdminDashboardPage() {
                   <button
                     onClick={() => setShowReportMonthModal(true)}
                     disabled={!selectedExpertId}
-                    className="px-6 py-3 bg-[#d32f2f] text-white font-bold rounded-xl shadow hover:opacity-90 transition-all disabled:opacity-50 disabled:shadow-none flex items-center gap-2"
+                    className="px-4 py-3 bg-[#d32f2f] text-white font-bold rounded-xl shadow hover:opacity-90 transition-all disabled:opacity-50 disabled:shadow-none flex items-center gap-2"
                   >
                     <span className="material-symbols-outlined text-sm">picture_as_pdf</span>
                     Activity Report
