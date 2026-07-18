@@ -36,6 +36,15 @@ exports.updateForm = async (id, updates) => {
   }
 };
 
+exports.deleteForm = async (id) => {
+  try {
+    await db.form.delete({ where: { id } });
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+
 exports.submitResponse = async (data) => {
   return await db.formResponse.create({ data });
 };
