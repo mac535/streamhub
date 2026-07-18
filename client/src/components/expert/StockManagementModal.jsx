@@ -64,7 +64,7 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
   const [isAddingItem, setIsAddingItem] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [newItemForm, setNewItemForm] = useState({
-    uniqueId: '', itemName: '', category: '', newQty: '', availableQty: 0,
+    itemCode: '', itemName: '', category: '', newQty: '', availableQty: 0,
     usedQty: 0, damagedQty: 0, consumedQty: 0, remarks: '', section: '', label: '', imgFile: null
   });
 
@@ -110,7 +110,7 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
       const q = searchQuery.toLowerCase();
       result = result.filter(s =>
         (s.itemName || '').toLowerCase().includes(q) ||
-        (s.uniqueId || '').toLowerCase().includes(q) ||
+        (s.itemCode || '').toLowerCase().includes(q) ||
         (s.spaceCode || '').toLowerCase().includes(q)
       );
     }
@@ -187,7 +187,7 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
   const handleAddItem = async (e) => {
     e.preventDefault();
     if (isSubmitting) return;
-    if (!newItemForm.itemName || !newItemForm.uniqueId) return showFeedback('error', 'Item Name and Unique ID are required');
+    if (!newItemForm.itemName || !newItemForm.itemCode) return showFeedback('error', 'Item Name and Unique ID are required');
     if (!newItemForm.imgFile) return showFeedback('error', 'Please upload a photo of the equipment');
     
     const finalCategory = newItemForm.category === 'Other' ? (newItemForm.customCategory || 'Other') : newItemForm.category;
@@ -196,7 +196,7 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
     setIsSubmitting(true);
     try {
       const formData = new FormData();
-      formData.append('uniqueId', newItemForm.uniqueId);
+      formData.append('itemCode', newItemForm.itemCode);
       formData.append('itemName', newItemForm.itemName);
       formData.append('category', finalCategory);
       formData.append('section', newItemForm.section);
@@ -221,14 +221,14 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
         await api.post('/messages', {
           type: 'NEW_ITEM_ALERT',
           title: `✨ New Item Added: ${addedStock.itemName}`,
-          message: `Expert manually added "${addedStock.itemName}" (${addedStock.uniqueId}) with quantity ${addedStock.newQty} at ${brcName}.`,
+          message: `Expert manually added "${addedStock.itemName}" (${addedStock.itemCode}) with quantity ${addedStock.newQty} at ${brcName}.`,
           brc: brcCode,
           priority: 'NORMAL',
         });
 
         showFeedback('success', 'New item added successfully!');
         setIsAddingItem(false);
-        setNewItemForm({ uniqueId: '', itemName: '', category: '', customCategory: '', newQty: '', availableQty: 0, usedQty: 0, damagedQty: 0, consumedQty: 0, remarks: '', section: '', label: '', imgFile: null });
+        setNewItemForm({ itemCode: '', itemName: '', category: '', customCategory: '', newQty: '', availableQty: 0, usedQty: 0, damagedQty: 0, consumedQty: 0, remarks: '', section: '', label: '', imgFile: null });
       }
     } catch (err) {
       showFeedback('error', 'Failed to add new item.');
@@ -256,8 +256,8 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
     const original = Number(stock.newQty || stock.quantity || 0);
     const isOutOfStock = available === 0 && original > 0;
     const alertContent = isOutOfStock
-      ? `🚨 OUT OF STOCK: "${stock.itemName}" (${stock.uniqueId}) at ${brcName}. Available: 0 / Original: ${original}`
-      : `⚠️ Low Stock: "${stock.itemName}" (${stock.uniqueId}) at ${brcName}. Available: ${available} / Original: ${original}`;
+      ? `🚨 OUT OF STOCK: "${stock.itemName}" (${stock.itemCode}) at ${brcName}. Available: 0 / Original: ${original}`
+      : `⚠️ Low Stock: "${stock.itemName}" (${stock.itemCode}) at ${brcName}. Available: ${available} / Original: ${original}`;
     try {
       await api.post('/messages', {
         type: isOutOfStock ? 'OUT_OF_STOCK_ALERT' : 'LOW_STOCK_ALERT',
@@ -381,7 +381,7 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
               <div className="p-6 grid grid-cols-3 gap-4 max-h-[70vh] overflow-y-auto">
                 <div className="col-span-3 lg:col-span-1">
                   <label className="block text-[10px] font-bold text-gray-500 uppercase mb-1">Unique ID *</label>
-                  <input required type="text" value={newItemForm.uniqueId} onChange={e => setNewItemForm({...newItemForm, uniqueId: e.target.value})} className="w-full text-xs p-2 border rounded-lg focus:border-amber-400 outline-none" />
+                  <input required type="text" value={newItemForm.itemCode} onChange={e => setNewItemForm({...newItemForm, itemCode: e.target.value})} className="w-full text-xs p-2 border rounded-lg focus:border-amber-400 outline-none" />
                 </div>
                 <div className="col-span-3 lg:col-span-2">
                   <label className="block text-[10px] font-bold text-gray-500 uppercase mb-1">Item Name *</label>
@@ -501,7 +501,7 @@ export default function StockManagementModal({ brcCode, brcName, onClose, inline
                       <span className="text-[11px] font-bold text-gray-400">{idx + 1}</span>
 
                       {/* Unique ID */}
-                      <span className="text-[10px] font-mono font-bold truncate" style={{ color: catStyle.accent }}>{stock.uniqueId}</span>
+                      <span className="text-[10px] font-mono font-bold truncate" style={{ color: catStyle.accent }}>{stock.itemCode}</span>
 
                       {/* IMG */}
                       {stock.img && stock.img !== '' ? (
