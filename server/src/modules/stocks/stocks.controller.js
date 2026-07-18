@@ -456,9 +456,8 @@ module.exports = {
         return {
           ...stock,
           history,
-          _wasUpdatedInSelectedMonths: wasUpdatedInSelectedMonths
         };
-      }).filter(stock => stock._wasUpdatedInSelectedMonths);
+      });
 
       return success(res, { stocks: comparisonData }, 200, 'Comparison data fetched successfully');
     } catch (err) {
