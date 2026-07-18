@@ -150,7 +150,7 @@ async function seedDatabase() {
               availableQty: s.availableQty || s.quantity || 0,
               baseline: s.baseline || 0,
               district: brc.district,
-              brc: brc.brcName
+              brc: brc.code
             })));
           }
         }
