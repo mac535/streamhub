@@ -24,7 +24,7 @@ async function authenticate(req, res, next) {
     const decoded = verifyToken(token);
 
     // Fetch fresh user data to ensure account is still active
-    const user = db.users.findUnique({
+    const user = await db.user.findUnique({
       where: { id: decoded.id },
       select: {
         id: true,
