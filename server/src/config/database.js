@@ -118,7 +118,7 @@ async function seedDatabase() {
         if (!allBrcs || allBrcs.length === 0) {
           stocksToInsert.push(...initialStocks.map(s => ({
             id: crypto.randomUUID(),
-            itemCode: s.itemCode,
+            itemCode: s.uniqueId || s.itemCode,
             itemName: s.itemName || 'Unknown Item',
             quantity: s.quantity || 0,
             category: s.category,
@@ -137,7 +137,7 @@ async function seedDatabase() {
           for (const brc of allBrcs) {
             stocksToInsert.push(...initialStocks.map(s => ({
               id: crypto.randomUUID(),
-              itemCode: s.itemCode,
+              itemCode: s.uniqueId || s.itemCode,
               itemName: s.itemName || 'Unknown Item',
               quantity: s.quantity || 0,
               category: s.category,
