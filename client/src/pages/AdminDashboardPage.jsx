@@ -274,8 +274,8 @@ export default function AdminDashboardPage() {
                 </div>
               </div>
               
-              <div className="flex flex-col lg:flex-row gap-3 mt-auto">
-                <div className="relative flex-1">
+              <div className="flex flex-wrap items-center gap-3 mt-auto">
+                <div className="relative flex-1 min-w-[200px]">
                   <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary pointer-events-none text-sm">
                     search
                   </span>
@@ -318,8 +318,8 @@ export default function AdminDashboardPage() {
                 </div>
               </div>
               
-              <div className="flex flex-col lg:flex-row gap-3 mt-auto">
-                <div className="relative flex-1">
+              <div className="flex flex-wrap items-center gap-3 mt-auto">
+                <div className="relative flex-1 min-w-[200px]">
                   <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-amber-600 pointer-events-none text-sm">
                     person
                   </span>
@@ -340,7 +340,7 @@ export default function AdminDashboardPage() {
                     arrow_drop_down
                   </span>
                 </div>
-                <div className="flex shrink-0 gap-2">
+                <div className="flex flex-wrap shrink-0 gap-2">
                   <button
                     onClick={() => setShowExpertManageModal(true)}
                     disabled={!selectedExpertId || selectedExpertId === 'all'}
