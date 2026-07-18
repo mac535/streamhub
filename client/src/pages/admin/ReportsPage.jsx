@@ -128,7 +128,7 @@ export default function ReportsPage() {
   }
 
   return (
-    <div className="w-full h-[calc(100vh-140px)] flex flex-col animate-fade-in-up bg-white rounded-2xl shadow-sm border border-black/[0.04] p-6">
+    <div className="w-full h-[calc(100vh-140px)] min-h-[650px] flex flex-col animate-fade-in-up bg-white rounded-2xl shadow-sm border border-black/[0.04] p-6">
       {/* Header and Filters */}
       <div className="shrink-0 mb-6">
         <h1 className="text-3xl font-black text-on-surface tracking-tight mb-6" style={{ fontFamily: "'Hanken Grotesk', sans-serif" }}>
